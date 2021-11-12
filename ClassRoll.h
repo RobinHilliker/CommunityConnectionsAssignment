@@ -3,11 +3,12 @@
 
 //Author:Robin Hilliker
 //This is a header file that defines a class of structs
+//Date:Nov 10
 using namespace std;
 
 
 const int SIZE =25;
-
+//This is the struct
 struct StudentRec
 {
 	string studentName;

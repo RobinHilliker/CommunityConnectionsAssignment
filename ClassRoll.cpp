@@ -3,7 +3,6 @@
 #include <fstream>
 
 
-
 ClassRoll::ClassRoll(string fileName, int newMaxStudents)
 {
 	maxStudents = newMaxStudents;
@@ -11,7 +10,7 @@ ClassRoll::ClassRoll(string fileName, int newMaxStudents)
 	ifstream fin(fileName);
 	if (!fin.is_open())
 	{
-		cout << "error opening student.data file ";
+		cout << "error opening student.data file,please try again";
 		system("pause");
 		exit(-1);
 	}
@@ -34,7 +33,7 @@ ClassRoll::ClassRoll(string fileName, int newMaxStudents)
 void ClassRoll::writeStudents(ostream& output)
 
 {
-	//Make this pretty
+	//Make this pretty,very pretty
 		for (int ctr = 0; ctr < noStudents; ctr++)
 		{
 			output << left << setw(30) << students[ctr].studentName << setw(20) << right
